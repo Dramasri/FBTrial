@@ -1,0 +1,100 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-05T11:21:09.294Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8136507514,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.befr()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User name and password",
+        "description": "",
+        "id": "to-check-the-login-function-in-fb;user-name-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1231883527,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.aftr()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22578357627,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Launch the fb",
+            "match": {
+              "location": "StepDef.launch_the_fb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2687540541,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Give the user name and password",
+            "match": {
+              "location": "StepDef.give_the_user_name_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.step.StepDef.click_login_button(StepDef.java:37)\r\n\tat ✽.Click login button(file:src/test/resources/c.feature:10)\r\n",
+              "duration": 20123921404,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Click login button",
+            "match": {
+              "location": "StepDef.click_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "To check the login function in fb",
+    "description": "",
+    "id": "to-check-the-login-function-in-fb",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/c.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
